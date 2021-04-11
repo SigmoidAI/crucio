@@ -22,14 +22,14 @@ To use balancer from crucio you should just import the balancer from crucio in t
 ```from crucio import <class name>```\
 class names are written above.\
 Next create a object of this algorithm (I will use ADASYN method as an example).\
-```method = ADASYN()```\
+```method = ADASYN()```
 
 To balance the dataset on the target column use the ‘balance’ function, using as parameters the pandas Data Frame and the column that you want to balance.\
 
-```new_dataframe = method.balance(df, 'target')```\
+```new_dataframe = method.balance(df, 'target')```
 
-Returned value is a new data frame with the target column balanced.\
+Returned value is a new data frame with the target column balanced.
 
-With love from Sigmoid.\
+With love from Sigmoid.
 
-We are open for feedback. Please send your impression to papaluta.vasile@isa.utm.md\
+We are open for feedback. Please send your impression to papaluta.vasile@isa.utm.md
