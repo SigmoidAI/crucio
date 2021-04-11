@@ -14,14 +14,14 @@ This version of kydavra has the next methods of feature selection:
 * SLS (Safe-Level-Synthetic Minority Over-Sampling TEchnique).
 * TKRKNN (Top-K ReverseKNN).\
 
-All these methods takes the pandas Data Frame and y column to balance on.\
+All these methods takes the pandas Data Frame and y column to balance on.
 
-How to use crucio\
+How to use crucio
 
 To use balancer from crucio you should just import the balancer from crucio in the following framework:\
 ```from crucio import <class name>```\
 class names are written above.\
-Next create a object of this algorithm (I will use ADASYN method as an example).\
+Next create a object of this algorithm (I will use ADASYN method as an example).
 ```method = ADASYN()```
 
 To balance the dataset on the target column use the ‘balance’ function, using as parameters the pandas Data Frame and the column that you want to balance.\
