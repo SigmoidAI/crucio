@@ -18,15 +18,22 @@ All these methods takes the pandas Data Frame and y column to balance on.
 
 How to use crucio
 
-To use balancer from crucio you should just import the balancer from crucio in the following framework:\
-```from crucio import <class name>```\
+To use balancer from crucio you should just import the balancer from crucio in the following framework:
+```python
+from crucio import <class name>
+```
+
 class names are written above.\
 Next create a object of this algorithm (I will use ADASYN method as an example).
-```method = ADASYN()```
+```python
+method = ADASYN()
+```
 
 To balance the dataset on the target column use the ‘balance’ function, using as parameters the pandas Data Frame and the column that you want to balance.
 
-```new_dataframe = method.balance(df, 'target')```
+```python
+new_dataframe = method.balance(df, 'target')
+```
 
 Returned value is a new data frame with the target column balanced.
 
