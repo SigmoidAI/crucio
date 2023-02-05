@@ -12,7 +12,7 @@ This version of kydavra has the next methods of feature selection:
 * SMOTEENN (Synthetic Minority Oversampling Technique + ENN for undersampling).
 * SCUT (SMOTE and Clustered Undersampling Technique).
 * SLS (Safe-Level-Synthetic Minority Over-Sampling TEchnique).
-* TKRKNN (Top-K ReverseKNN).\
+* TKRKNN (Top-K ReverseKNN).
 
 All these methods takes the pandas Data Frame and y column to balance on.
 
