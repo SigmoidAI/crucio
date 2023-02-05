@@ -1,5 +1,6 @@
 from setuptools import setup
 long_description = '''
+# crucio
 Crucio is a python sci-kit learn inspired package for class imbalance. It use some classic methods for class balancing taking as parameters a data frame and the target column.
 
 This version of kydavra has the next methods of feature selection:
