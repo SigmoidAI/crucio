@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 long_description = '''
 Crucio is a python sci-kit learn inspired package for class imbalance. It use some classic methods for class balancing taking as parameters a data frame and the target column.\n
 This version of crucio has the next methods of feature selection:\n
@@ -33,7 +33,7 @@ We are open for feedback. Please send your impression to vpapaluta06@gmail.com\n
 setup(
   name = 'crucio',         # How you named your package folder (MyLib)
   packages = ['crucio'],   # Chose the same as "name"
-  version = '0.1.4',      # Start with a small number and increase it with every change you make
+  version = '0.1.5',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'Crucio is a python sci-kit learn inspired package for class imbalance. It use some classic methods for class balancing taking as parameters a data frame and the target column.',   # Give a short description about your library
   long_description=long_description,
