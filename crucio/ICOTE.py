@@ -15,7 +15,7 @@ def warn(*args, **kwargs):
 import warnings
 warnings.warn = warn
 
-class ICOTE
+class ICOTE:
     def __init__(self, binary_columns : list = None, seed : 'int > 0' = 42) -> None:
         '''
             The constructor of ICOTE.
