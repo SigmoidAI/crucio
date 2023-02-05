@@ -21,13 +21,13 @@ How to use crucio
 
 To use balancer from crucio you should just import the balancer from crucio in the following framework:
 ```python
-from crucio import <class name>
+from crucio import SMOTE
 ```
 
 class names are written above.\
-Next create a object of this algorithm (I will use ADASYN method as an example).
+Next create a object of this algorithm (I will use SMOTE method as an example).
 ```python
-method = ADASYN()
+method = SMOTE()
 ```
 
 To balance the dataset on the target column use the ‘balance’ function, using as parameters the pandas Data Frame and the column that you want to balance. Small tip, balance only the training set, not full one.
@@ -41,16 +41,17 @@ Returned value is a new data frame with the target column balanced.
 With love from Sigmoid.
 
 We are open for feedback. Please send your impression to vladimir.stojoc@gmail.com
-
 '''
+
 setup(
   name = 'crucio',         # How you named your package folder (MyLib)
   packages = ['crucio'],   # Chose the same as "name"
-  version = '0.1.6',      # Start with a small number and increase it with every change you make
+  version = '0.1.91',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'Crucio is a python sci-kit learn inspired package for class imbalance. It use some classic methods for class balancing taking as parameters a data frame and the target column.',   # Give a short description about your library
   long_description=long_description,
-  author = 'YOUR NAME',                   # Type in your name
+  long_description_content_type='text/markdown',
+  author = 'Păpăluță Vasile, Stojoc Vladimir',                   # Type in your name
   author_email = 'vladimir.stojoc@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/SigmoidAI/crucio',   # Provide either the link to your github or to your website
   download_url = 'https://github.com/ScienceKot/crucio/archive/v1.0.tar.gz',    # I explain this later on
@@ -76,6 +77,5 @@ setup(
     'Programming Language :: Python :: 3.6',
     'Programming Language :: Python :: 3.7',
     'Programming Language :: Python :: 3.8',
-  ],
-  long_description_content_type='text/x-rst',
+  ]
 )
