@@ -29,7 +29,7 @@ Next create a object of this algorithm (I will use ADASYN method as an example).
 method = ADASYN()
 ```
 
-To balance the dataset on the target column use the ‘balance’ function, using as parameters the pandas Data Frame and the column that you want to balance.
+To balance the dataset on the target column use the ‘balance’ function, using as parameters the pandas Data Frame and the column that you want to balance. Small tip, balance only the training set, not full one.
 
 ```python
 new_dataframe = method.balance(df, 'target')
