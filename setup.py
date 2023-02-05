@@ -1,33 +1,46 @@
 from setuptools import setup
 long_description = '''
-Crucio is a python sci-kit learn inspired package for class imbalance. It use some classic methods for class balancing taking as parameters a data frame and the target column.\n
-This version of crucio has the next methods of feature selection:\n
-1) ADASYN\n
-2) ICOTE (Immune Centroids Oversampling)\n
-3) MTDF (Mega-Trend Difussion Function)\n
-4) MWMOTE (Majority Weighted Minority Oversampling Technique)\n
-5) SMOTE (Synthetic Minority Oversampling Technique)\n
-6) SMOTENC (Synthetic Minority Over-sampling Technique for Nominal and Continuous)\n
-7) SMOTETOMEK (Synthetic Minority Oversampling Technique + Tomek links for undersampling)\n
-8) SMOTEENN (Synthetic Minority Oversampling Technique + ENN for undersampling)\n
-9) SCUT (SMOTE and Clustered Undersampling Technique)\n
-10) SLS (Safe-Level-Synthetic Minority Over-Sampling TEchnique)\n
-11) TKRKNN (Top-K ReverseKNN)\n
-All these methods takes the pandas Data Frame and y column to balance on.\n
+Crucio is a python sci-kit learn inspired package for class imbalance. It use some classic methods for class balancing taking as parameters a data frame and the target column.
 
-How to use crucio\n
-To use balancer from crucio you should just import the balancer from crucio in the following framework:\n
-```from crucio import <class name>```\n
-class names are written above in parantheses.\n
-Next create a object of this algorithm (I will use ADASYN method as an example).\n
-```method = ADASYN()```\n
-To balance the dataset on the target column use the 'balance' function, using as parameters the pandas Data Frame and the column that you want to balance.\n
-```new_dataframe = method.balance(df, 'target')```\n
-Returned value is a new data frame with the target column balanced.\n
+This version of kydavra has the next methods of feature selection:
+* ADASYN.
+* ICOTE (Immune Centroids Oversampling).
+* MTDF (Mega-Trend Difussion Function).
+* MWMOTE (Majority Weighted Minority Oversampling Technique).
+* SMOTE (Synthetic Minority Oversampling Technique).
+* SMOTENC (Synthetic Minority Over-sampling Technique for Nominal and Continuous).
+* SMOTETOMEK (Synthetic Minority Oversampling Technique + Tomek links for undersampling).
+* SMOTEENN (Synthetic Minority Oversampling Technique + ENN for undersampling).
+* SCUT (SMOTE and Clustered Undersampling Technique).
+* SLS (Safe-Level-Synthetic Minority Over-Sampling TEchnique).
+* TKRKNN (Top-K ReverseKNN).
 
-With love from Sigmoid.\n
+All these methods takes the pandas Data Frame and y column to balance on.
 
-We are open for feedback. Please send your impression to vpapaluta06@gmail.com\n
+How to use crucio
+
+To use balancer from crucio you should just import the balancer from crucio in the following framework:
+```python
+from crucio import <class name>
+```
+
+class names are written above.\
+Next create a object of this algorithm (I will use ADASYN method as an example).
+```python
+method = ADASYN()
+```
+
+To balance the dataset on the target column use the ‘balance’ function, using as parameters the pandas Data Frame and the column that you want to balance. Small tip, balance only the training set, not full one.
+
+```python
+new_dataframe = method.balance(df, 'target')
+```
+
+Returned value is a new data frame with the target column balanced.
+
+With love from Sigmoid.
+
+We are open for feedback. Please send your impression to vladimir.stojoc@gmail.com
 
 '''
 setup(
@@ -38,8 +51,8 @@ setup(
   description = 'Crucio is a python sci-kit learn inspired package for class imbalance. It use some classic methods for class balancing taking as parameters a data frame and the target column.',   # Give a short description about your library
   long_description=long_description,
   author = 'YOUR NAME',                   # Type in your name
-  author_email = 'vpapaluta06@gmail.com',      # Type in your E-Mail
-  url = 'https://github.com/ScienceKot/crucio.git',   # Provide either the link to your github or to your website
+  author_email = 'vladimir.stojoc@gmail.com',      # Type in your E-Mail
+  url = 'https://github.com/SigmoidAI/crucio',   # Provide either the link to your github or to your website
   download_url = 'https://github.com/ScienceKot/crucio/archive/v1.0.tar.gz',    # I explain this later on
   keywords = ['ml', 'machine learning', 'imbalanced learning', 'class balancing', 'python'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
